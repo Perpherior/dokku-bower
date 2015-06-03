@@ -7,11 +7,6 @@ DIR=/app
 COMMAND=$(cat <<EOF
 export DEBIAN_FRONTEND=noninteractive
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-
-export PATH="/usr/local/bin:$PATH"
-
 brew install node
 
 npm install bower -g
